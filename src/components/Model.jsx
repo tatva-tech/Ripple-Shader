@@ -135,15 +135,15 @@ export default function Model() {
     scene.add(camera);
     const geometry = new THREE.PlaneGeometry(1, 1);
     const group = new THREE.Group();
-    const texture1 = useTexture("/images/picture1.jpeg");
-    const material1 = new THREE.MeshBasicMaterial({ map: texture1 });
-    const image1 = new THREE.Mesh(geometry, material1);
-    image1.position.x = -0.25 * viewport.width;
-    image1.position.y = 0;
-    image1.position.z = 1;
-    image1.scale.x = viewport.width / 5;
-    image1.scale.y = viewport.width / 4;
-    group.add(image1);
+    // const texture1 = useTexture("/images/picture1.jpeg");
+    // const material1 = new THREE.MeshBasicMaterial({ map: texture1 });
+    // const image1 = new THREE.Mesh(geometry, material1);
+    // image1.position.x = -0.25 * viewport.width;
+    // image1.position.y = 0;
+    // image1.position.z = 1;
+    // image1.scale.x = viewport.width / 5;
+    // image1.scale.y = viewport.width / 4;
+    // group.add(image1);
 
     const texture2 = useTexture("/images/picture2.jpeg");
     const material2 = new THREE.MeshBasicMaterial({ map: texture2 });
@@ -155,15 +155,15 @@ export default function Model() {
     image2.scale.y = viewport.width / 4;
     group.add(image2);
 
-    const texture3 = useTexture("/images/picture3.jpeg");
-    const material3 = new THREE.MeshBasicMaterial({ map: texture3 });
-    const image3 = new THREE.Mesh(geometry, material3);
-    image3.position.x = 0.25 * viewport.width;
-    image3.position.y = 0;
-    image3.position.z = 1;
-    image3.scale.x = viewport.width / 5;
-    image3.scale.y = viewport.width / 4;
-    group.add(image3);
+    // const texture3 = useTexture("/images/picture3.jpeg");
+    // const material3 = new THREE.MeshBasicMaterial({ map: texture3 });
+    // const image3 = new THREE.Mesh(geometry, material3);
+    // image3.position.x = 0.25 * viewport.width;
+    // image3.position.y = 0;
+    // image3.position.z = 1;
+    // image3.scale.x = viewport.width / 5;
+    // image3.scale.y = viewport.width / 4;
+    // group.add(image3);
 
     scene.add(group);
     return { scene, camera };
