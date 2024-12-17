@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 const Scene = dynamic(() => import("@/components/Scene"), {
   loading: () => (
-    <div role="status" className="flex w-full h-screen justify-center items-center">
+    <div role="status" className=" flex w-full h-screen justify-center items-center">
       <svg
         aria-hidden="true"
         class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
